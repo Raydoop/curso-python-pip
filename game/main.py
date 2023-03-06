@@ -1,8 +1,8 @@
 import random
 
 def choose_options():
-    options = ('piedra', 'papel', 'tijeras')
-    user_option = input('piedra, papel o tijera? ==>')
+    options = ('piedra', 'papel', 'tijera')
+    user_option = input('piedra, papel o tijera? ==> ')
     user_option = user_option.lower() #lo que escriba el usuario pasará a minuscula
 
     if not user_option in options:
@@ -11,8 +11,8 @@ def choose_options():
 
     computer_option = random.choice(options)
 
-    print('User option ==>', user_option)
-    print('computer option ==>', computer_option)
+    print('User option ==> ', user_option)
+    print('computer option ==> ', computer_option)
     return user_option, computer_option
 
 def check_rules(user_option, computer_option, user_wins, computer_wins):
